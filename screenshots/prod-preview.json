@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": ".",
+      "hasCanvas": false,
+      "bodyTextLen": 41,
+      "bodyTextHash": "f11ced25be097d71ecd0a11065918a1cbb3bdfa39ac1036ade0b7ad3eccd49c2",
+      "bodyTextPrefix": "🔒 Enter Passcode 1 2 3 4 5 6 7 8 9 0 ⌫ ·",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": ".",
+      "hasCanvas": false,
+      "bodyTextLen": 41,
+      "bodyTextHash": "f11ced25be097d71ecd0a11065918a1cbb3bdfa39ac1036ade0b7ad3eccd49c2",
+      "bodyTextPrefix": "🔒 Enter Passcode 1 2 3 4 5 6 7 8 9 0 ⌫ ·",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/prod-preview.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

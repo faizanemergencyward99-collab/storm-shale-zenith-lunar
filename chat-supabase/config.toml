@@ -1,0 +1,22 @@
+# Supabase project configuration (used by the Supabase CLI for deploys).
+#
+# NOTE: this points at the CURRENT project. The previous value
+# (suwdzoycyeihbkhmpxay) is the OLD quota-restricted project the chat was
+# migrated away from — deploying there would have silently done nothing useful.
+project_id = "jqhstwtmhtsupkiwatyv"
+
+# Both functions must be publicly reachable WITHOUT a Supabase user JWT,
+# because this app has no auth at all — the browser only holds the anon key.
+# Each function performs its own validation instead.
+
+# The wake-up function is called by:
+#  - the SPA, with a plain fetch() (no auth headers → no CORS preflight)
+#  - Twilio's servers, which fetch /wake-up/twiml when a full-account call connects
+[functions.wake-up]
+verify_jwt = false
+
+# The push function is called by:
+#  - the sender's browser, right after a message insert
+#  - the Postgres pg_net AFTER INSERT trigger on chat_messages
+[functions.send-push-notification]
+verify_jwt = false
